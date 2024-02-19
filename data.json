@@ -46,31 +46,31 @@
     "gallery": {
         "row1": [
             {
-                "image": "https://mulearn.org/assets/home/illustration.webp"
+                "image": "assets-mulearnmits/gallery/dpl 10.jpg"
             },
             {
-                "image": "https://mulearn.org/assets/home/Chart.webp"
+                "image": "assets-mulearnmits/gallery/mustory screening.jpg"
             },
 			{
-				"image": "https://learn.mulearn.org/assets/challenge/typingsample.webp"
+				"image": "assets-mulearnmits/gallery/quiz.jpg"
 			}
         ],
         "row2": [
             {
-                "image": "https://th.bing.com/th/id/OIP.p5zC9uLm5ByGSy8gYI0McAHaE8?pid=ImgDet&rs=1"
+                "image": "assets-mulearnmits/gallery/smt.jpg"
             },
             {
-                "image": "https://images.squarespace-cdn.com/content/v1/5c710438b914490d5769a64f/b4fb2b4f-5f95-41a1-9416-d156d0ae273f/Most+Famous+Astrologer+in+the+World.jpg"
+                "image": "assets-mulearnmits/gallery/stages.jpg"
             }
         ]
     },
 
     "statistics": {
-        "studentsCount": 30,
-        "learningCircles": 10,
-        "InterestGroups": 5,
-        "karmaEarned": 60,
-        "rank": 28
+        "studentsCount": 512,
+        "learningCircles": 42,
+        "InterestGroups": 4,
+        "karmaEarned": 176,
+        "rank": 18
     },
 
     "team": {
