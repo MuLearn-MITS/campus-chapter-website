@@ -94,7 +94,7 @@ const Statistics = () => {
                                 {index >= 0
                                     ? counter >= 2
                                         ? `${counter}+`
-                                        : counter
+                                        : counter    
                                     : counter.toLocaleString()}
                             </h3>
                             <p>

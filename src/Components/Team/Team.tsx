@@ -70,23 +70,6 @@ const Team = () => {
                         <div className={styles.team1Img}>
                             <img
                                 className={styles.teamImageIndividual}
-                                src={data.team.treasurer.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.treasurer.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Treasurer
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.team} ${styles.team5}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
                                 src={data.team.technicalLead.image}
                                 loading="lazy"
                             />
@@ -97,6 +80,23 @@ const Team = () => {
                             </div>
                             <div className={styles.teamMemberDesignation}>
                                 Technical Lead
+                            </div>
+                        </div>
+                    </div>
+                    <div className={`${styles.team} ${styles.team5}`}>
+                        <div className={styles.team1Img}>
+                            <img
+                                className={styles.teamImageIndividual}
+                                src={data.team.creativeLead.image}
+                                loading="lazy"
+                            />
+                        </div>
+                        <div className={styles.teamNameDesignation}>
+                            <div className={styles.teamMemberName}>
+                                {data.team.creativeLead.name}
+                            </div>
+                            <div className={styles.teamMemberDesignation}>
+                                Creative Lead
                             </div>
                         </div>
                     </div>
