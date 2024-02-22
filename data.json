@@ -1,45 +1,45 @@
 {
     "collegeCode": "MUT",
 
-    "college": "Sree Narayana Guru Institute of Science and Technology",
+    "college": "Muthoot Institute of Technology and Science",
 
-    "about": "Lorem ipsum dolor sit amet consectetur adipiscing, elit ultricies imperdiet neque mattis, orci pellentesque turpis facilisi leo. Laoreet donec tortor sagittis habitasse eleifend conubia quis lacinia accumsan auctor, montes morbi natoque convallis integer aliquam posuere eu nulla, proin fames dapibus mattis sociis ligula blandit quam potenti. Himenaeos fringilla tincidunt aptent porta ultrices velit dignissim senectus purus suspendisse, fames eleifend feugiat nam hac montes semper pretium potenti, viverra curae netus volutpat cras per eu cubilia primis.",
+    "about": "A GTech initiative, this community is all about mutual learning through micro peer groups. With interest groups for AI/ML, Blockchain, UI/UX, Cyber Security, other major domains, and over 280 mentors, µLearn is a powerful circle currently established in over 1900 colleges. The µLearn MITS community reflects the true essence of mutual learning; currently with 512 members and a stunning total of 175.9K karma points , we are going strong! Join our family, sharpen your skill sets, and get ready to take on the world.",
 
     "events": [
         {
-            "month": "Sep",
-            "date": "29",
-            "head": "Event 1",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
+            "month": "Feb",
+            "date": "20",
+            "head": "Web Tech Quiz",
+            "para": "The WEB TECH QUIZ is a quiz designed exclusively to test the web development knowledge in HTML, CSS , JavaScript, Backend Development, Web Security and Tech Stacks.",
+            "img": "assets-mulearnmits/events section/events/web_tech.jpg"
+        },
+        {
+            "month": "Feb",
+            "date": "17",
+            "head": "Python Workshop",
+            "para": "A handson python workshop was conducted on 17th February 2024 .This workshop was led by Sivani LR, GDSC Lead at LBSITW.",
+            "img": "assets-mulearnmits/events section/events/python_workshop.jpg"
+        },
+        {
+            "month": "Feb",
+            "date": "7",
+            "head": "Salt Mango Tree",
+            "para": "Salt Mango Tree is a group discussion on a given topic, aimed at developing speaking skills.It was held on 7th Febrauary 2024 through Gathering Field Voice Channel.",
+            "img": "assets-mulearnmits/events section/events/salt_mango_tree.jpg"
+        },
+        {
+            "month": "Jan",
+            "date": "24",
+            "head": "Competitive Coding",
+            "para": "The Competitive Coding Session was led by Mr.Gaurav Kabra, Head of Coding Club at IIIT Lucknow. Competitive Coding session provided an opportunity to know more about coding concepts, ask doubts, solve coding challenges  and connect with coding enthusiasts.",
+            "img": "assets-mulearnmits/events section/events/competitive_coding.jpg"
         },
         {
             "month": "Sep",
-            "date": "27",
-            "head": "Opportunities in TCS EIS",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
-        },
-        {
-            "month": "Sep",
-            "date": "26",
-            "head": "Opportunities in TCS EIS",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
-        },
-        {
-            "month": "Sep",
-            "date": "25",
-            "head": "Opportunities in TCS EIS",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
-        },
-        {
-            "month": "Sep",
-            "date": "25",
-            "head": "Opportunities in TCS EIS",
-            "para": "Webinar on Engineering and Industrial Services division of TCS.",
-            "img": "https://wallpaperaccess.com/full/1642272.jpg"
+            "date": "19",
+            "head": "Weekly Twitch",
+            "para": "An edition of the Inspiration Station Radio was hosted by μLearn MITS on 19th September 2023 via Discord. Ameen Abdullah, Web Developer and μLearn MITS Tech Co – Lead was the speaker.",
+            "img": "assets-mulearnmits/events section/events/weekly_twitch.jpg"
         }
     ],
 
