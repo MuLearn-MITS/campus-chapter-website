@@ -87,13 +87,13 @@ const Team = () => {
                         <div className={styles.team1Img}>
                             <img
                                 className={styles.teamImageIndividual}
-                                src={data.team.treasurer.image}
+                                src={data.team.creativeLead.image}
                                 loading="lazy"
                             />
                         </div>
                         <div className={styles.teamNameDesignation}>
                             <div className={styles.teamMemberName}>
-                                {data.team.treasurer.name}
+                                {data.team.creativeLead.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
                                 Creative Lead
