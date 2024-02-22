@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 25px;
+  gap: 15px;
   padding: 5vh 5%;
   width: 100%;
 }
@@ -12,12 +12,13 @@
 .AboutWrapper h1 {
   color: #ae59ff;
   font-size: 35px;
+  margin-bottom: 10px;
 }
 
 .AboutWrapper p {
   font-size: 20px;
   color: rgb(66, 66, 66);
-  text-align: left;
+  text-align: center;
   font-size: 1.2rem;
 }
 
