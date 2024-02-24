@@ -3,35 +3,35 @@
 
     "college": "Muthoot Institute of Technology and Science",
 
-    "about": ["Welcome to the official website of µLearn MITS!","A GTech initiative, the µLearn community is all about mutual learning. µLearn MITS reflects that true essence of learning : currently with 512 members and a total of 175.9K karma points, we are going strong!","Join our family and","Explore, Learn, Grow - Together"],
+    "about": ["Welcome to the official website of µLearn MITS!","A GTech initiative, the µLearn community is all about mutual learning. µLearn MITS reflects that true essence of learning : currently with 500+ members and a total of 178K+ karma points, we are going strong!","Join our family and","Explore, Learn, Grow - Together"],
 
     "events": [
         {
             "month": "Feb",
             "date": "20",
             "head": "Web Tech Quiz",
-            "para": "The WEB TECH QUIZ is a quiz designed exclusively to test the web development knowledge in HTML, CSS , JavaScript, Backend Development, Web Security and Tech Stacks.",
+            "para": "The WEB TECH QUIZ is a quiz designed exclusively to test knowledge in HTML, CSS , JavaScript, Backend Development, Web Security and Tech Stacks.",
             "img": "assets-mulearnmits/events section/events/web_tech.jpg"
         },
         {
             "month": "Feb",
             "date": "17",
             "head": "Python Workshop",
-            "para": "A handson python workshop was conducted on 17th February 2024 .This workshop was led by Sivani LR, GDSC Lead at LBSITW.",
+            "para": "A hands-on python workshop was conducted on 17th February 2024, in collaboration with µLearn GECSKP. This workshop was led by Sivani LR, GDSC Lead at LBSITW.",
             "img": "assets-mulearnmits/events section/events/python_workshop.jpg"
         },
         {
             "month": "Feb",
             "date": "7",
             "head": "Salt Mango Tree",
-            "para": "Salt Mango Tree is a group discussion on a given topic, aimed at developing speaking skills.It was held on 7th Febrauary 2024 through Gathering Field Voice Channel.",
+            "para": "Salt Mango Tree is a group discussion on a given topic, aimed at developing speaking skills. µLearn MITS hosted it on 7th Febrauary 2024 through Gathering Field Voice Channel.",
             "img": "assets-mulearnmits/events section/events/salt_mango_tree.jpg"
         },
         {
             "month": "Jan",
             "date": "24",
             "head": "Competitive Coding",
-            "para": "The Competitive Coding Session was led by Mr.Gaurav Kabra, Head of Coding Club at IIIT Lucknow. Competitive Coding session provided an opportunity to know more about coding concepts, ask doubts, solve coding challenges  and connect with coding enthusiasts.",
+            "para": "The Competitive Coding Session was led by Mr.Gaurav Kabra, Head of Coding Club at IIIT Lucknow. The session provided an opportunity to know more about coding concepts, ask doubts, solve coding challenges and connect with coding enthusiasts.",
             "img": "assets-mulearnmits/events section/events/competitive_coding.jpg"
         },
         {
@@ -69,7 +69,7 @@
         "studentsCount": 527,
         "learningCircles": 42,
         "InterestGroups": 4,
-        "karmaEarned": 176,
+        "karmaEarned": 178,
         "rank": 18
     },
 
