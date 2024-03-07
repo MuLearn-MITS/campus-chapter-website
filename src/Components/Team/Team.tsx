@@ -28,7 +28,7 @@ const Team = () => {
                                 {data.team.staffAdvisor.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Staff Advisor
+                                Lead Enabler
                             </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@ const Team = () => {
                                 {data.team.operationLead.name}
                             </div>
                             <div className={styles.teamMemberDesignation}>
-                                Operation Lead
+                                Design Lead
                             </div>
                         </div>
                     </div>
