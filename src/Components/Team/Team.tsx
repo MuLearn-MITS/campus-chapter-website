@@ -1,158 +1,140 @@
 import styles from "./Team.module.css";
 import line from "./assets/line.png";
 import line2 from "./assets/line2.png";
-import data from "../../../data.json"
+import { useRef,useEffect,useState } from "react";
 
 const Team = () => {
+
+    let row1 = [
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+        {
+            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
+            name:"Joel Basil Kurian",
+            Position:'campus Lead',
+        },
+    ]
+
+    const gridBox = useRef(null!)
+    const [lines, setlines] = useState<string[]>([])
+
+    useEffect(()=>{
+        console.log(row1.length)
+        window.addEventListener("resize",()=>{
+            const gridColumnStyle = window.getComputedStyle(gridBox.current).getPropertyValue('grid-template-rows');
+            console.log(gridColumnStyle.split(' '));
+            setlines(gridColumnStyle.split(' '))
+        })
+
+    },[])
+
     return (
-        <div className={styles.teamWrapper} id="team">
-            <h1>Our Team</h1>
-            <div className={styles.teamBodyWrapper}>
-                <div className={styles.teamBgLineWrapper}>
-                    <img src={line} alt="" loading="lazy" />
-                    <img src={line2} alt="" loading="lazy" />
-                    <img src={line} alt="" loading="lazy" />
-                    <img src={line2} alt="" loading="lazy" />
-                </div>
-                <div className={styles.teamMembersDetailsWrapper}>
-                    <div className={`${styles.team} ${styles.team1}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
-                                src={data.team.staffAdvisor.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.staffAdvisor.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Lead Enabler
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.team} ${styles.team2}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
-                                src={data.team.campusLead.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.campusLead.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Campus Lead
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.team} ${styles.team3}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
-                                src={data.team.campusCoLead.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.campusCoLead.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Campus Co-Lead
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.team} ${styles.team4}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
-                                src={data.team.technicalLead.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.technicalLead.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Technical Lead
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.team} ${styles.team5}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
-                                src={data.team.creativeLead.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.creativeLead.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Creative Lead
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.team} ${styles.team6}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
-                                src={data.team.mediaLead.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.mediaLead.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Media Lead
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.team} ${styles.team7}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
-                                src={data.team.contentLead.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.contentLead.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Content Lead
-                            </div>
-                        </div>
-                    </div>
-                    <div className={`${styles.team} ${styles.team8}`}>
-                        <div className={styles.team1Img}>
-                            <img
-                                className={styles.teamImageIndividual}
-                                src={data.team.operationLead.image}
-                                loading="lazy"
-                            />
-                        </div>
-                        <div className={styles.teamNameDesignation}>
-                            <div className={styles.teamMemberName}>
-                                {data.team.operationLead.name}
-                            </div>
-                            <div className={styles.teamMemberDesignation}>
-                                Design Lead
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className={`styles.teamWrapper flex flex-col items-center w-full relative`} id="team">
+            <h1 className="p-5 text-3xl">Our Team</h1>
+            <div className="w-full pt-14 bg-red-">
+                 <div ref={gridBox} className="grid grid-cols-2 md:grid-cols-3 lg:grid- relative">
+                                {
+                                    lines.map((e,i)=>{
+                                        return (
+                                            <img src={i%2==0?line:line2} alt="" className="absolute translate-y-[150%] -z-10" style={{ top: `calc(${e} * ${i})`}}/>
+                                        )
+                                    })
+                                }
+
+                    {
+                        row1.map((item, i) => {
+                            return (
+                                <div className={`-translate-y-${i%2==0?0:6} flex flex-col items-center justify-center bg-red- p-2 px-5`} key={i}>
+                                    <img className="rounded-full" src={item.image} alt="" />
+                                    <div className="flex flex-col items-center">
+                                        <h2>{item.name}</h2>
+                                        <p>{item.Position}</p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                 </div>
             </div>
+            
         </div>
     );
 };
