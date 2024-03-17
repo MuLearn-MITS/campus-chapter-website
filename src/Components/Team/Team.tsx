@@ -8,11 +8,17 @@ const Team = () => {
     const gridBox = useRef(null!)
     const [lines, setlines] = useState<string[]>([])
 
-    useEffect(()=>{
-        const addLines = ()=>{
-            const gridColumnStyle = window.getComputedStyle(gridBox.current).getPropertyValue('grid-template-rows');
-            setlines(gridColumnStyle.split(' '))
+    const addLines = ()=>{
+        const gridColumnStyle = window.getComputedStyle(gridBox.current).getPropertyValue('grid-template-rows');
+        setlines(gridColumnStyle.split(' '))
+        console.log(gridColumnStyle.split(' '))
+    }
+    const setImgHeight = (h:number)=>{
+        if(h==0){
+            addLines();
         }
+    }
+    useEffect(()=>{
         window.addEventListener("resize",()=>{
             addLines()
         })
@@ -46,7 +52,6 @@ const Team = () => {
                                         )
                                     })
                                 }
-
                  </div>
             </div>
             
