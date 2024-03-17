@@ -1,4 +1,3 @@
-import styles from "./Team.module.css";
 import line from "./assets/line.png";
 import line2 from "./assets/line2.png";
 import { useRef,useEffect,useState } from "react";
