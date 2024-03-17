@@ -10,10 +10,8 @@ const Team = () => {
     const [lines, setlines] = useState<string[]>([])
 
     useEffect(()=>{
-        // console.log(row1.length)
         const addLines = ()=>{
             const gridColumnStyle = window.getComputedStyle(gridBox.current).getPropertyValue('grid-template-rows');
-            console.log(gridColumnStyle.split(' '));
             setlines(gridColumnStyle.split(' '))
         }
         window.addEventListener("resize",()=>{
@@ -24,7 +22,7 @@ const Team = () => {
 
     return (
         <div className={`styles.teamWrapper flex flex-col items-center w-full relative`} id="team">
-            <h1 className="p-5 text-3xl font-bold text-[#AF5DFF]">Our Team</h1>
+            <h1 className="py-7 text-3xl font-bold text-[#AF5DFF]">Our Team</h1>
             <div className="w-full  bg-red-">
                  <div ref={gridBox} className="grid gap-0 gap-x-8 relative sm:px-14 mob:px-6 lg:grid-cols-4 md:grid-cols-3 mob:grid-cols-2 mob:gap-x-10
                 lg:gap-x-20 sm:gap-x-10
@@ -32,8 +30,7 @@ const Team = () => {
                                 {
                                     lines.map((e,i)=>{
                                         return (
-                                            // <img src={i%2==0?line:line2} alt="" className="absolute sm:translate-y-[150%] lg:translate-y-[90%] -z-10" style={{ top:`calc(${i* 100}% + 10px)` }} />
-                                                <img src={i%2==0?line:line2} alt="" className="absolute w-full -z-10 sm:translate-y-[50%] md:translate-y-[100%] lg:translate-y-[50%] mob:translate-y-[150%]" style={{ top:`calc(${lines[0]}*${i})`}} />
+                                                <img src={i%2==0?line:line2} alt="" className="absolute w-full -z-10 sm:translate-y-[50%] md:translate-y-[100%] lg:translate-y-[50%] mob:translate-y-[200%]" style={{ top:`calc(${lines[0]}*${i})`}} />
                                         )
                                     })
                                 }
