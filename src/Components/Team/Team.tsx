@@ -13,11 +13,6 @@ const Team = () => {
         setlines(gridColumnStyle.split(' '))
         console.log(gridColumnStyle.split(' '))
     }
-    const setImgHeight = (h:number)=>{
-        if(h==0){
-            addLines();
-        }
-    }
     useEffect(()=>{
         window.addEventListener("resize",()=>{
             addLines()
@@ -44,7 +39,7 @@ const Team = () => {
                         data.team.map((item, i) => {
                             return (
                                 <div className={`${i%2==0?'-translate-y-0':'-translate-y-6'} flex flex-col gap-2 items-center justify-center bg-red- p-2 py-6`} key={i}>
-                                    <img className="rounded-full" src={item.image} onLoad={()=>setImgHeight(i)} alt="" />
+                                    <img className="rounded-full" src={item.image} onLoad={()=>{i==0?addLines():null}} alt="" />
                                     <div className="flex flex-col items-center">
                                         <h2 className="tracking- font-bold mob:text-[80%] sm:text-[100%]">{item.name}</h2>
                                         <p className="tracking- text-[#AF5DFF] mob:text-[75%] sm:text-[90%]">{item.position}</p>
