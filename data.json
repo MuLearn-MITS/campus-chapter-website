@@ -73,40 +73,98 @@
         "rank": 18
     },
 
-    "team": {
-        "staffAdvisor": {
+    "team": [
+         {
             "name": "Sneha Sreedevi",
-            "image": "assets-mulearnmits/team/Sneha Sreedevi - Lead Enabler.png"
+            "image": "assets-mulearnmits/team/Sneha Sreedevi - Lead Enabler.png",
+            "position": "Lead Enabler"
         },
-        "campusLead": {
+        {
             "name": "Joel Basil Kurian",
-            "image": "assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png"
+            "image": "assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png",
+            "position": "Campus Lead"
         },
-        "campusCoLead": {
+         {
             "name": "Akshat Pradeep",
-            "image": "assets-mulearnmits/team/Akshat Pradeep - Campus Co-Lead.png"
+            "image": "assets-mulearnmits/team/Akshat Pradeep - Campus Co-Lead.png",
+            "position": "Campus Co-Lead"
         },
-        "creativeLead": {
+        {
             "name": "Diya Ziyad",
-            "image": "assets-mulearnmits/team/Diya Ziyad - Creative Lead.png"
+            "image": "assets-mulearnmits/team/Diya Ziyad - Creative Lead.png",
+            "position": "Creative Lead"
         },
-        "technicalLead": {
+         {
             "name": "Aswin Lal KS",
-            "image": "assets-mulearnmits/team/Aswin Lal KS - Tech Lead.png"
+            "image": "assets-mulearnmits/team/Aswin Lal KS - Tech Lead.png",
+            "position": "Tech Lead"
         },
-        "mediaLead": {
+        {
             "name": "Aimee Jobi",
-            "image": "assets-mulearnmits/team/Aimee Jobi - Media Lead.png"
+            "image": "assets-mulearnmits/team/Aimee Jobi - Media Lead.png",
+            "position": "Media Lead"
         },
-        "contentLead": {
+         {
             "name": "Diya S Nair",
-            "image": "assets-mulearnmits/team/Diya S Nair - Content Lead.png"
+            "image": "assets-mulearnmits/team/Diya S Nair - Content Lead.png",
+            "position": "Content Lead"
         },
-        "operationLead": {
+         {
             "name": "Gayathri Sankar",
-            "image": "assets-mulearnmits/team/Gayathri Sankar - Design Lead.png"
+            "image": "assets-mulearnmits/team/Gayathri Sankar - Design Lead.png",
+            "position": "Design Lead"
+        },
+         {
+            "name": "Alan Francis Santhosh",
+            "image": "assets-mulearnmits/team/Alan Francis Santhosh - Web Development IG Lead.png",
+            "position": "Web Dev IG Lead"
+        },
+         {
+            "name": "Ameen Abdullah",
+            "image": "/assets-mulearnmits/team/Ameen Abdullah - Tech Co-Lead.png",
+            "position": "Tech Co-Lead"
+        },
+         {
+            "name": "Joann Jibin",
+            "image": "/assets-mulearnmits/team/Joann Jibin - AI IG Lead.png",
+            "position": "AI IG Lead"
+        },
+         {
+            "name": "Kadeeja Manika R",
+            "image": "/assets-mulearnmits/team/Kadeeja Manika R - Designer.png",
+            "position": "Designer"
+        },
+         {
+            "name": "Laasya U G",
+            "image": "/assets-mulearnmits/team/Laasya U G - Designer.png",
+            "position": "Designer"
+        },
+         {
+            "name": "Maria Rose Biju ",
+            "image": "/assets-mulearnmits/team/Maria Rose Biju - Designer.png",
+            "position": "Designer"
+        },
+         {
+            "name": "Andrew C Anil",
+            "image": "/assets-mulearnmits/team/Andrew C Anil - Cyber Security IG Lead.png",
+            "position": "Cyber Security IG Lead"
+        },
+         {
+            "name": "Sanjay Biju",
+            "image": "/assets-mulearnmits/team/Sanjay Biju - Media Co-Lead.png",
+            "position": "Media Co-Lead"
+        },
+         {
+            "name": "Sanjay Biju",
+            "image": "/assets-mulearnmits/team/Sanjay Biju - Media Co-Lead.png",
+            "position": "Media Co-Lead"
+        },
+         {
+            "name": "Sanjay Biju",
+            "image": "/assets-mulearnmits/team/Sanjay Biju - Media Co-Lead.png",
+            "position": "Media Co-Lead"
         }
-    },
+    ],
 
     "discordLink": "",
 

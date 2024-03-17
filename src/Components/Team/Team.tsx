@@ -2,131 +2,50 @@ import styles from "./Team.module.css";
 import line from "./assets/line.png";
 import line2 from "./assets/line2.png";
 import { useRef,useEffect,useState } from "react";
+import data from "../../../data.json"
 
 const Team = () => {
-
-    let row1 = [
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-        {
-            image:'./assets-mulearnmits/team/Joel Basil Kurian - Campus Lead.png',
-            name:"Joel Basil Kurian",
-            Position:'campus Lead',
-        },
-    ]
 
     const gridBox = useRef(null!)
     const [lines, setlines] = useState<string[]>([])
 
     useEffect(()=>{
-        console.log(row1.length)
-        window.addEventListener("resize",()=>{
+        // console.log(row1.length)
+        const addLines = ()=>{
             const gridColumnStyle = window.getComputedStyle(gridBox.current).getPropertyValue('grid-template-rows');
             console.log(gridColumnStyle.split(' '));
             setlines(gridColumnStyle.split(' '))
+        }
+        window.addEventListener("resize",()=>{
+            addLines()
         })
-
+        addLines()
     },[])
 
     return (
         <div className={`styles.teamWrapper flex flex-col items-center w-full relative`} id="team">
-            <h1 className="p-5 text-3xl">Our Team</h1>
-            <div className="w-full pt-14 bg-red-">
-                 <div ref={gridBox} className="grid grid-cols-2 md:grid-cols-3 lg:grid- relative">
+            <h1 className="p-5 text-3xl font-bold text-[#AF5DFF]">Our Team</h1>
+            <div className="w-full  bg-red-">
+                 <div ref={gridBox} className="grid gap-0 gap-x-8 relative sm:px-14 mob:px-6 lg:grid-cols-4 md:grid-cols-3 mob:grid-cols-2 mob:gap-x-10
+                lg:gap-x-20 sm:gap-x-10
+                 ">
                                 {
                                     lines.map((e,i)=>{
                                         return (
-                                            <img src={i%2==0?line:line2} alt="" className="absolute translate-y-[150%] -z-10" style={{ top: `calc(${e} * ${i})`}}/>
+                                            // <img src={i%2==0?line:line2} alt="" className="absolute sm:translate-y-[150%] lg:translate-y-[90%] -z-10" style={{ top:`calc(${i* 100}% + 10px)` }} />
+                                                <img src={i%2==0?line:line2} alt="" className="absolute w-full -z-10 sm:translate-y-[50%] md:translate-y-[100%] lg:translate-y-[50%] mob:translate-y-[150%]" style={{ top:`calc(${lines[0]}*${i})`}} />
                                         )
                                     })
                                 }
 
                     {
-                        row1.map((item, i) => {
+                        data.team.map((item, i) => {
                             return (
-                                <div className={`-translate-y-${i%2==0?0:6} flex flex-col items-center justify-center bg-red- p-2 px-5`} key={i}>
+                                <div className={`${i%2==0?'-translate-y-0':'-translate-y-6'} flex flex-col gap-2 items-center justify-center bg-red- p-2 py-6`} key={i}>
                                     <img className="rounded-full" src={item.image} alt="" />
                                     <div className="flex flex-col items-center">
-                                        <h2>{item.name}</h2>
-                                        <p>{item.Position}</p>
+                                        <h2 className="tracking- font-bold mob:text-[80%] sm:text-[100%]">{item.name}</h2>
+                                        <p className="tracking- text-[#AF5DFF] mob:text-[75%] sm:text-[90%]">{item.position}</p>
                                     </div>
                                 </div>
                             )
